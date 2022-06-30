@@ -269,7 +269,12 @@
             var tab = document.getElementById('contactsTable').rows[activeRow];
             var obj = {};
 
-            obj[col[0]] = contactListData.body[contactListData.body.length-1].ID  + 1;
+            if(contactListData.body[contactListData.body.length-1].ID!=null){
+                obj[col[0]] = contactListData.body[contactListData.body.length-1].ID + 1;
+            }
+            else{
+                obj[col[0]]=1;
+            }
 
             for (i = 1; i < col.length; i++) {
                 var td = tab.getElementsByTagName("td")[i];
