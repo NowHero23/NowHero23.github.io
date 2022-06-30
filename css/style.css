@@ -1,0 +1,73 @@
+/*сброс стандартных стилей*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+li {
+	list-style-type: none;
+}
+/* img {
+	height: 100%;
+} */
+/*------------------------*/
+
+.container {
+	/* max-width: 500px; */
+	width: 900px;
+	margin: 80px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+table, th, td {
+	border: solid 1px #DDD;
+	border-collapse: collapse;
+	padding: 3px 4px;
+	text-align: center;
+}
+
+table {
+	outline: 2px solid #5db4e6;
+	border: 5px solid #ffffff;
+	width: 100%;
+	font: 17px Calibri;
+}
+
+tr:hover {
+	background: rgb(211, 248, 255);
+}
+tr:first-child {
+	background: rgb(0, 217, 255);
+}
+tr:last-child {
+	background: none;
+}
+
+input[type='button'] {
+	border-radius: 5px;
+	font: 15px Calibri;
+	padding: 5px 10px;
+	cursor: pointer;
+	border: none;
+	color: #FFF;
+	display: inline-block;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+input[type='button']:hover {
+	border: 2px dashed black;
+}
+
+input[type='text'], select {
+	font: 17px Calibri;
+	text-align: center;
+	border: solid 1px #CCC;
+	width: auto;
+	padding: 2px 3px;
+}
+
+input[type='text']:focus {
+	outline: 2px dashed black;
+}
