@@ -269,7 +269,7 @@
             var tab = document.getElementById('contactsTable').rows[activeRow];
             var obj = {};
 
-            if(contactListData.body[contactListData.body.length-1].ID!=null){
+            if(contactListData.body[contactListData.body.length-1]!=null){
                 obj[col[0]] = contactListData.body[contactListData.body.length-1].ID + 1;
             }
             else{
